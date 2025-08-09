@@ -8,7 +8,7 @@ Landin_Page is a modern analytics platform designed to help enterprises transfor
 - Enterprise-grade security
 - Industry-specific solutions
 
-** 🛠️Key Technologies Used:**
+ ## 🛠️Key Technologies Used:
 - Frontend: HTML5, CSS3, JavaScript (ES6+)
 - Styling: CSS Variables for theming
 - Icons: Font Awesome
