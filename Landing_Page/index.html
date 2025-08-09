@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DataVision Analytics - Enterprise-grade Business Intelligence Platform">
+    <meta name="keywords" content="analytics, BI, dashboards, data visualization, business intelligence, reporting">
+    <meta name="author" content="DataVision Analytics">
+    <title>DataVision Analytics | Enterprise Business Intelligence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="DataVision Analytics Home">
+                <i class="fas fa-chart-line logo-icon"></i>
+                <span>DataVision</span>
+            </a>
+
+            <nav class="nav-links" role="navigation">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#customers" class="nav-link">Customers</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#resources" class="nav-link">Resources</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#" class="btn btn-outline">Log in</a>
+                <a href="#pricing" class="btn btn-primary">Get Demo</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+            <nav class="mobile-nav" id="mobileNav" role="navigation">
+                <button class="mobile-nav-close" aria-label="Close mobile menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="mobile-nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#solutions" class="nav-link">Solutions</a>
+                    <a href="#customers" class="nav-link">Customers</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                    <a href="#" class="btn btn-outline">Log in</a>
+                    <a href="#pricing" class="btn btn-primary">Get Demo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content animate-fade-in">
+                <span class="hero-badge">Trusted by Fortune 500 companies</span>
+                <h1 class="hero-title">Transform Data into Strategic Insights</h1>
+                <p class="hero-text">DataVision's enterprise analytics platform empowers organizations to uncover hidden
+                    patterns, predict trends, and make data-driven decisions with confidence. Our AI-powered engine
+                    processes billions of data points in real-time.</p>
+
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn btn-primary">Request Demo</a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-play-circle"></i> Watch Overview
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Faster decisions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3.5x</span>
+                        <span class="stat-label">ROI average</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.99%</span>
+                        <span class="stat-label">Uptime SLA</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image animate-fade-in delay-100">
+                <img loading="lazy"
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    alt="DataVision Analytics Dashboard">
+                <div class="image-badge">
+                    <i class="fas fa-shield-alt"></i> SOC 2 Type II Certified
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <!-- <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-by-label">Trusted by innovative organizations worldwide</p>
+            <div class="trusted-by-logos">
+                <img src="https://th.bing.com/th/id/R.bda23999d3b07c5f1ee74ac6623b1d2a?rik=YjkFwZcU6UEbtQ&pid=ImgRaw&r=0" alt="Microsoft"
+                    loading="lazy">
+                <img src="https://th.bing.com/th/id/R.de6785ee60ba7879c39a279ddc0b034f?rik=EQZOM9KV5U2w6Q&pid=ImgRaw&r=0" alt="Amazon" loading="lazy">
+                <img src="https://th.bing.com/th/id/R.06cd8f948fb099f1626338163513b4a6?rik=vEdjjvFl5OIk1A&pid=ImgRaw&r=0" alt="IBM" loading="lazy">
+                <img src="https://via.placeholder.com/120x40/003366/ffffff?text=Oracle" alt="Oracle" loading="lazy">
+                <img src="https://via.placeholder.com/120x40/ff0000/ffffff?text=Salesforce" alt="Salesforce"
+                    loading="lazy">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Enterprise-Grade Analytics Capabilities</h2>
+                <p class="section-subtitle">Scalable, secure, and designed for complex business environments</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animate-fade-in delay-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="feature-title">Data Integration</h3>
+                    <p class="feature-text">Connect to 200+ data sources including Snowflake, Redshift, BigQuery, and
+                        SAP with our pre-built connectors.</p>
+                    <a href="#" class="feature-link">Explore integrations <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card animate-fade-in delay-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Predictive Analytics</h3>
+                    <p class="feature-text">Built-in machine learning models forecast trends and identify anomalies with
+                        95% accuracy.</p>
+                    <a href="#" class="feature-link">See use cases <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card animate-fade-in delay-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="feature-title">Granular Governance</h3>
+                    <p class="feature-text">Row-level security, data masking, and audit logs meet strict compliance
+                        requirements.</p>
+                    <a href="#" class="feature-link">Security overview <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card animate-fade-in delay-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="feature-title">Custom Workflows</h3>
+                    <p class="feature-text">Automate data pipelines and business processes with our low-code workflow
+                        engine.</p>
+                    <a href="#" class="feature-link">View documentation <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card animate-fade-in delay-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Mobile Insights</h3>
+                    <p class="feature-text">Native iOS and Android apps deliver real-time alerts and KPIs to your team
+                        anywhere.</p>
+                    <a href="#" class="feature-link">App features <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card animate-fade-in delay-300">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="feature-title">Hybrid Deployment</h3>
+                    <p class="feature-text">Cloud, on-premise, or hybrid deployment options to meet your infrastructure
+                        needs.</p>
+                    <a href="#" class="feature-link">Architecture details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Industry-Specific Solutions</h2>
+                <p class="section-subtitle">Tailored analytics for your business challenges</p>
+            </div>
+    
+            <div class="solutions-tabs">
+                <button class="tab-btn active" data-tab="financial">Financial Services</button>
+                <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+                <button class="tab-btn" data-tab="retail">Retail</button>
+                <button class="tab-btn" data-tab="manufacturing">Manufacturing</button>
+            </div>
+    
+            <div class="solutions-content">
+                <div class="solution-pane active" id="financial">
+                    <div class="solution-details">
+                        <h3>Risk Management & Compliance Analytics</h3>
+                        <p>Monitor transactions in real-time, detect anomalies, and generate regulatory reports with our
+                            purpose-built financial analytics solution.</p>
+                        <ul class="solution-benefits">
+                            <li><i class="fas fa-check-circle"></i> Reduce false positives by 40% with AI-powered fraud
+                                detection</li>
+                            <li><i class="fas fa-check-circle"></i> Automate Basel III, CCAR, and AML compliance reporting
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Stress test portfolios with scenario modeling</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">View Financial Services Solution</a>
+                    </div>
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80"
+                            alt="Financial Analytics" loading="lazy">
+                    </div>
+                </div>
+    
+                <div class="solution-pane" id="healthcare">
+                    <div class="solution-details">
+                        <h3>Patient Outcomes & Operational Efficiency</h3>
+                        <p>Our healthcare analytics platform integrates EHR, claims, and operational data to improve patient
+                            care while reducing costs.</p>
+                        <ul class="solution-benefits">
+                            <li><i class="fas fa-check-circle"></i> Predict patient readmission risk with 89% accuracy</li>
+                            <li><i class="fas fa-check-circle"></i> Optimize staff scheduling based on historical demand
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> HIPAA-compliant data handling with full audit trails
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">View Healthcare Solution</a>
+                    </div>
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Healthcare Analytics" loading="lazy">
+                    </div>
+                </div>
+    
+                <div class="solution-pane" id="retail">
+                    <div class="solution-details">
+                        <h3>Customer Insights & Inventory Optimization</h3>
+                        <p>Leverage customer behavior data and predictive analytics to enhance merchandising and supply
+                            chain efficiency.</p>
+                        <ul class="solution-benefits">
+                            <li><i class="fas fa-check-circle"></i> Increase basket size by 22% with personalized
+                                recommendations</li>
+                            <li><i class="fas fa-check-circle"></i> Reduce stockouts by 35% with AI-powered demand
+                                forecasting</li>
+                            <li><i class="fas fa-check-circle"></i> Optimize pricing strategies with competitive market
+                                analysis</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">View Retail Solution</a>
+                    </div>
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Retail Analytics" loading="lazy">
+                    </div>
+                </div>
+    
+                <div class="solution-pane" id="manufacturing">
+                    <div class="solution-details">
+                        <h3>Predictive Maintenance & Quality Control</h3>
+                        <p>Transform manufacturing operations with IoT data integration and real-time production monitoring.
+                        </p>
+                        <ul class="solution-benefits">
+                            <li><i class="fas fa-check-circle"></i> Reduce equipment downtime by 45% with predictive
+                                maintenance</li>
+                            <li><i class="fas fa-check-circle"></i> Improve product quality with real-time defect detection
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Optimize supply chain with end-to-end visibility</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline">View Manufacturing Solution</a>
+                    </div>
+                    <div class="solution-image">
+                        <img src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Manufacturing Analytics" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Customers Section -->
+    <section class="customers" id="customers">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Customer Success Stories</h2>
+                <p class="section-subtitle">See how industry leaders leverage DataVision Analytics</p>
+            </div>
+
+            <div class="customers-grid">
+                <div class="customer-card animate-fade-in delay-100">
+                    
+                    <p class="customer-quote">"DataVision reduced our risk reporting time from weeks to hours, helping
+                        us meet stringent regulatory deadlines."</p>
+                    <div class="customer-results">
+                        <div class="result-item">
+                            <strong>63% faster</strong>
+                            <span>Regulatory reporting</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>$4.2M saved</strong>
+                            <span>Annual compliance costs</span>
+                        </div>
+                    </div>
+                    <a href="#" class="customer-link">Read case study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="customer-card animate-fade-in delay-200">
+                    
+                    <p class="customer-quote">"Predictive analytics identified at-risk patients 30 days earlier than our
+                        previous methods."</p>
+                    <div class="customer-results">
+                        <div class="result-item">
+                            <strong>22% reduction</strong>
+                            <span>In readmissions</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>17% improvement</strong>
+                            <span>Patient satisfaction</span>
+                        </div>
+                    </div>
+                    <a href="#" class="customer-link">Read case study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="customer-card animate-fade-in delay-300">
+                    
+                    <p class="customer-quote">"Demand forecasting improved our inventory turnover by 35% while reducing
+                        stockouts."</p>
+                    <div class="customer-results">
+                        <div class="result-item">
+                            <strong>35% increase</strong>
+                            <span>Inventory turnover</span>
+                        </div>
+                        <div class="result-item">
+                            <strong>18% higher</strong>
+                            <span>Gross margins</span>
+                        </div>
+                    </div>
+                    <a href="#" class="customer-link">Read case study <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Flexible Pricing Options</h2>
+                <p class="section-subtitle">Choose the plan that matches your organization's needs</p>
+            </div>
+
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-period="cloud">Cloud</button>
+                <button class="tab-btn" data-period="onprem">On-Premise</button>
+                <button class="tab-btn" data-period="hybrid">Hybrid</button>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card animate-fade-in delay-100">
+                    <h3 class="pricing-title">Standard</h3>
+                    <div class="pricing-price" data-cloud="$25,000/yr" data-onprem="$45,000/yr"
+                        data-hybrid="$35,000/yr">
+                        <span class="price-value">$25,000</span><span class="pricing-period">/year</span>
+                    </div>
+                    <p>For departments and mid-size teams</p>
+
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 50 users</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>100GB data capacity</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Standard connectors</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Business hours support</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-outline">Contact Sales</a>
+                </div>
+
+                <div class="pricing-card popular animate-fade-in delay-200">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="pricing-title">Enterprise</h3>
+                    <div class="pricing-price" data-cloud="$75,000/yr" data-onprem="$120,000/yr"
+                        data-hybrid="$95,000/yr">
+                        <span class="price-value">$75,000</span><span class="pricing-period">/year</span>
+                    </div>
+                    <p>For large organizations with complex needs</p>
+
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited users</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>1TB data capacity</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Premium connectors</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 priority support</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card animate-fade-in delay-300">
+                    <h3 class="pricing-title">Custom</h3>
+                    <div class="pricing-price">Contact Us</div>
+                    <p>Tailored solutions for global enterprises</p>
+
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited scale</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom integrations</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Dedicated infrastructure</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Personalized training</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-outline">Request Consultation</a>
+                </div>
+            </div>
+
+            <div class="pricing-addons">
+                <h3>Add-on Modules</h3>
+                <div class="addons-grid">
+                    <div class="addon-card">
+                        <h4>Advanced AI</h4>
+                        <p>Predictive modeling and NLP capabilities</p>
+                        <div class="addon-price">$15,000/yr</div>
+                    </div>
+                    <div class="addon-card">
+                        <h4>Data Warehouse</h4>
+                        <p>Integrated cloud data storage</p>
+                        <div class="addon-price">$10,000/yr</div>
+                    </div>
+                    <div class="addon-card">
+                        <h4>Premium Support</h4>
+                        <p>4-hour response SLA</p>
+                        <div class="addon-price">$8,000/yr</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <div class="section-header animate-fade-in">
+                <h2 class="section-title">Resources</h2>
+                <p class="section-subtitle">Learn how to maximize your analytics investment</p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card animate-fade-in delay-100">
+                    <div class="resource-image">
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Getting Started Guide">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="resource-type">
+                                <i class="far fa-file-alt"></i> Whitepaper
+                            </span>
+                            <span>•</span>
+                            <span>12 min read</span>
+                        </div>
+                        <h3 class="resource-title">Enterprise Analytics Maturity Model</h3>
+                        <p class="resource-excerpt">Assess your organization's analytics capabilities and identify
+                            improvement opportunities.</p>
+                        <a href="#" class="resource-link">
+                            Download Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-card animate-fade-in delay-200">
+                    <div class="resource-image">
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                            alt="Webinar">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="resource-type">
+                                <i class="fas fa-video"></i> Webinar
+                            </span>
+                            <span>•</span>
+                            <span>45 min</span>
+                        </div>
+                        <h3 class="resource-title">Data Governance Best Practices</h3>
+                        <p class="resource-excerpt">Learn how leading organizations balance data access with security
+                            requirements.</p>
+                        <a href="#" class="resource-link">
+                            Watch Recording <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resource-card animate-fade-in delay-300">
+                    <div class="resource-image">
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80"
+                            alt="Case Study">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="resource-type">
+                                <i class="far fa-chart-bar"></i> Report
+                            </span>
+                            <span>•</span>
+                            <span>2024 Edition</span>
+                        </div>
+                        <h3 class="resource-title">State of Enterprise Analytics</h3>
+                        <p class="resource-excerpt">Key trends and benchmarks from our survey of 500+ organizations.</p>
+                        <a href="#" class="resource-link">
+                            Get the Report <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resources-cta">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-book-open"></i> View All Resources
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Transform Your Data Strategy?</h2>
+                    <p class="cta-text">Schedule a personalized demo to see how DataVision can address your specific
+                        business challenges.</p>
+                </div>
+                <div class="cta-form">
+                    <input type="text" placeholder="Full Name" class="cta-input" required aria-label="Full name">
+                    <input type="email" placeholder="Work Email" class="cta-input" required aria-label="Email address">
+                    <input type="text" placeholder="Company Name" class="cta-input" required aria-label="Company name">
+                    <button type="submit" class="cta-btn">Request Demo</button>
+                    <span class="form-message"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-main">
+                <a href="#" class="footer-logo" aria-label="DataVision Analytics Home">
+                    <i class="fas fa-chart-line logo-icon"></i>
+                    DataVision
+                </a>
+                <p class="footer-text">Empowering data-driven enterprises since 2012.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Solutions</h3>
+                <ul>
+                    <li><a href="#solutions">By Industry</a></li>
+                    <li><a href="#">By Department</a></li>
+                    <li><a href="#">By Use Case</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#resources">Library</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">
+                &copy; 2024 DataVision Analytics, Inc. All rights reserved.
+            </p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
+                <a href="#">GDPR</a>
+                <a href="#">CCPA</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
