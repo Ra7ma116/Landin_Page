@@ -8,7 +8,7 @@ Landin_Page is a modern analytics platform designed to help enterprises transfor
 - Enterprise-grade security
 - Industry-specific solutions
 
- ## 🛠️Key Technologies Used:
+  ## 🛠️ Technologies Used
 - Frontend: HTML5, CSS3, JavaScript (ES6+)
 - Styling: CSS Variables for theming
 - Icons: Font Awesome
@@ -29,17 +29,34 @@ Landin_Page is a modern analytics platform designed to help enterprises transfor
 - **Retail**: Customer behavior insights
 - **Manufacturing**: Predictive maintenance
 
+## 📦 How to Use
 
-## Installation
+To run this project locally, follow these simple steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Ra7ma116/Landing_Page.git
+    ```
+
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Landing_Page 
+    ```
+
+3.  **Open `index.html`:**
+    Simply open the `index.html` file in your preferred web browser.
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - Node.js (v14+) for development
 - npm or yarn
 
-### Quick Start
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/datavision-analytics.git
-   cd datavision-analytics
-   
+## 📂 Project Structure
+```
+Landing_Page/
+│
+├── index.html
+├── assets/
+│   ├── style.css
+│   └── main.js
+```
