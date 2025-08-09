@@ -1,6 +1,5 @@
 # Landin_Page
-
-Landin_Page is a modern analytics platform designed to help enterprises transform raw data into actionable insights. Our solution provides:
+ Landin_Page is a modern analytics platform designed to help enterprises transform raw data into actionable insights. Our solution provides:
 
 - Real-time data visualization
 - AI-powered predictive analytics
@@ -60,3 +59,13 @@ Landing_Page/
 │   ├── style.css
 │   └── main.js
 ```
+## 🤝 Contributing
+Fork the repository
+
+Create your feature branch (git checkout -b feature/new-feature)
+
+Commit your changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature/new-feature)
+
+Open a Pull Request
