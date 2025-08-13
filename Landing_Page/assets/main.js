@@ -69,12 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const period = tab.dataset.period;
             pricingCards.forEach(card => {
                 if (card.dataset[period]) {
-                    card.querySelector('.price-value').textContent = card.dataset[period];
+                    card.querySelector('.price-value').textContent = card.dataset[period].split('/')[0];
                 }
             });
         });
     });
-
 
     // Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
@@ -137,17 +136,23 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const emailInput = ctaForm.querySelector('input[type="email"]');
             const nameInput = ctaForm.querySelector('input[type="text"]');
+            const companyInput = ctaForm.querySelector('input[type="text"]:nth-child(3)');
             const email = emailInput.value.trim();
             const name = nameInput.value.trim();
+            const company = companyInput.value.trim();
 
-            if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                formMessage.textContent = 'Please enter valid name and email address';
+            if (!name || !email || !company || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                formMessage.textContent = 'Please fill all fields with valid information';
                 formMessage.style.color = '#ff6b6b';
             } else {
                 formMessage.textContent = 'Thank you! A representative will contact you shortly.';
                 formMessage.style.color = 'white';
                 emailInput.value = '';
                 nameInput.value = '';
+                companyInput.value = '';
+
+                // Trigger confetti effect
+                triggerConfetti();
             }
 
             formMessage.classList.add('show');
@@ -155,6 +160,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 formMessage.classList.remove('show');
             }, 5000);
         });
+    }
+
+    // Confetti effect
+    function triggerConfetti() {
+        const confettiSettings = {
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        };
+
+        // Check if confetti function exists (would need to include confetti.js library)
+        if (typeof confetti === 'function') {
+            confetti(confettiSettings);
+        }
     }
 
     // Intersection Observer for Animations
@@ -173,4 +192,37 @@ document.addEventListener('DOMContentLoaded', () => {
         element.style.opacity = '0';
         observer.observe(element);
     });
+
+    // Tooltip initialization
+    const tooltips = document.querySelectorAll('.tooltip');
+    tooltips.forEach(tooltip => {
+        tooltip.addEventListener('mouseenter', () => {
+            const tooltipText = tooltip.querySelector('.tooltip-text');
+            tooltipText.style.visibility = 'visible';
+            tooltipText.style.opacity = '1';
+        });
+        tooltip.addEventListener('mouseleave', () => {
+            const tooltipText = tooltip.querySelector('.tooltip-text');
+            tooltipText.style.visibility = 'hidden';
+            tooltipText.style.opacity = '0';
+        });
+    });
+
+    // Lazy loading for images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const image = entry.target;
+                    image.src = image.dataset.src || image.src;
+                    imageObserver.unobserve(image);
+                }
+            });
+        });
+
+        lazyImages.forEach(image => {
+            imageObserver.observe(image);
+        });
+    }
 });
