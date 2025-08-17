@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileNav = document.querySelector('#mobileNav');
     const mobileNavClose = document.querySelector('.mobile-nav-close');
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileNavOverlay.addEventListener('click', toggleMobileMenu);
     }
 
-    // Close mobile menu on nav link click
     if (mobileNav) {
         mobileNav.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Solutions Tabs
     const solutionTabs = document.querySelectorAll('.solutions-tabs .tab-btn');
     const solutionPanes = document.querySelectorAll('.solution-pane');
 
@@ -43,11 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('click', () => {
             const tabId = tab.dataset.tab;
 
-            // Update active tab
             solutionTabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Show corresponding pane
             solutionPanes.forEach(pane => {
                 pane.classList.remove('active');
                 if (pane.id === tabId) {
@@ -57,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Pricing Tabs
     const pricingTabs = document.querySelectorAll('.pricing-tabs .tab-btn');
     const pricingCards = document.querySelectorAll('.pricing-price');
 
@@ -75,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Theme Toggle
     const themeToggle = document.getElementById('themeToggle');
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
@@ -90,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Load saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         document.documentElement.classList.toggle('dark', savedTheme === 'dark');
@@ -102,9 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Smooth Scroll
     document.querySelectorAll('.nav-link, a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href').startsWith('#')) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
@@ -115,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         behavior: 'smooth'
                     });
 
-                    // Close mobile menu if open
                     if (mobileNav && mobileNav.classList.contains('active')) {
                         mobileNav.classList.remove('active');
                         mobileNavOverlay.classList.remove('active');
@@ -127,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Submission
     const ctaForm = document.querySelector('.cta-form');
     const formMessage = document.querySelector('.form-message');
 
@@ -151,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 nameInput.value = '';
                 companyInput.value = '';
 
-                // Trigger confetti effect
                 triggerConfetti();
             }
 
@@ -162,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Confetti effect
     function triggerConfetti() {
         const confettiSettings = {
             particleCount: 100,
@@ -170,13 +157,11 @@ document.addEventListener('DOMContentLoaded', () => {
             origin: { y: 0.6 }
         };
 
-        // Check if confetti function exists (would need to include confetti.js library)
         if (typeof confetti === 'function') {
             confetti(confettiSettings);
         }
     }
 
-    // Intersection Observer for Animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -193,7 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    // Tooltip initialization
     const tooltips = document.querySelectorAll('.tooltip');
     tooltips.forEach(tooltip => {
         tooltip.addEventListener('mouseenter', () => {
@@ -208,7 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Lazy loading for images
     const lazyImages = document.querySelectorAll('img[loading="lazy"]');
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver((entries) => {
